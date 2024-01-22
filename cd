@@ -1,0 +1,61 @@
+[1mdiff --git a/SR/.vs/Frame142/FileContentIndex/06e0bfd7-8319-40cd-b041-7afa21798dc1.vsidx b/SR/.vs/Frame142/FileContentIndex/06e0bfd7-8319-40cd-b041-7afa21798dc1.vsidx[m
+[1mdeleted file mode 100644[m
+[1mindex f184ea8..0000000[m
+Binary files a/SR/.vs/Frame142/FileContentIndex/06e0bfd7-8319-40cd-b041-7afa21798dc1.vsidx and /dev/null differ
+[1mdiff --git a/SR/.vs/Frame142/v17/.suo b/SR/.vs/Frame142/v17/.suo[m
+[1mindex e9b25cd..2f952fb 100644[m
+Binary files a/SR/.vs/Frame142/v17/.suo and b/SR/.vs/Frame142/v17/.suo differ
+[1mdiff --git a/SR/.vs/Frame142/v17/Browse.VC.db b/SR/.vs/Frame142/v17/Browse.VC.db[m
+[1mindex 9e83612..991ff56 100644[m
+Binary files a/SR/.vs/Frame142/v17/Browse.VC.db and b/SR/.vs/Frame142/v17/Browse.VC.db differ
+[1mdiff --git a/SR/Client/Bin/System.dll b/SR/Client/Bin/System.dll[m
+[1mindex 0b184e4..691ce0d 100644[m
+Binary files a/SR/Client/Bin/System.dll and b/SR/Client/Bin/System.dll differ
+[1mdiff --git a/SR/Client/Bin/Utility.dll b/SR/Client/Bin/Utility.dll[m
+[1mindex c540778..9999dca 100644[m
+Binary files a/SR/Client/Bin/Utility.dll and b/SR/Client/Bin/Utility.dll differ
+[1mdiff --git a/SR/Client/Code/MainApp.cpp b/SR/Client/Code/MainApp.cpp[m
+[1mindex 61c90f5..abdf772 100644[m
+[1m--- a/SR/Client/Code/MainApp.cpp[m
+[1m+++ b/SR/Client/Code/MainApp.cpp[m
+[36m@@ -15,8 +15,9 @@[m [mHRESULT CMainApp::Ready_MainApp()[m
+ {[m
+ 	FAILED_CHECK_RETURN(SetUp_Setting(&m_pGraphicDev), E_FAIL);[m
+ 	FAILED_CHECK_RETURN(Ready_Scene(m_pGraphicDev, &m_pManagementClass), E_FAIL);[m
+[31m-	[m
+[32m+[m	[32m//adfasf[m
+ 	//teests[m
+[32m+[m	[32m//sss[m
+ 	return S_OK;[m
+ }[m
+ [m
+[1mdiff --git a/SR/Engine/System/Bin/System.dll b/SR/Engine/System/Bin/System.dll[m
+[1mindex 0b184e4..691ce0d 100644[m
+Binary files a/SR/Engine/System/Bin/System.dll and b/SR/Engine/System/Bin/System.dll differ
+[1mdiff --git a/SR/Engine/System/Bin/System.exp b/SR/Engine/System/Bin/System.exp[m
+[1mindex 2e44145..4e0668d 100644[m
+Binary files a/SR/Engine/System/Bin/System.exp and b/SR/Engine/System/Bin/System.exp differ
+[1mdiff --git a/SR/Engine/System/Bin/System.lib b/SR/Engine/System/Bin/System.lib[m
+[1mindex 47b1a7a..c5d33d7 100644[m
+Binary files a/SR/Engine/System/Bin/System.lib and b/SR/Engine/System/Bin/System.lib differ
+[1mdiff --git a/SR/Engine/System/Bin/System.pdb b/SR/Engine/System/Bin/System.pdb[m
+[1mindex d808f8b..820c9e6 100644[m
+Binary files a/SR/Engine/System/Bin/System.pdb and b/SR/Engine/System/Bin/System.pdb differ
+[1mdiff --git a/SR/Engine/Utility/Bin/Utility.dll b/SR/Engine/Utility/Bin/Utility.dll[m
+[1mindex c540778..9999dca 100644[m
+Binary files a/SR/Engine/Utility/Bin/Utility.dll and b/SR/Engine/Utility/Bin/Utility.dll differ
+[1mdiff --git a/SR/Engine/Utility/Bin/Utility.exp b/SR/Engine/Utility/Bin/Utility.exp[m
+[1mindex 2b66bf5..cded1d2 100644[m
+Binary files a/SR/Engine/Utility/Bin/Utility.exp and b/SR/Engine/Utility/Bin/Utility.exp differ
+[1mdiff --git a/SR/Engine/Utility/Bin/Utility.lib b/SR/Engine/Utility/Bin/Utility.lib[m
+[1mindex 84fde62..3cb4aaa 100644[m
+Binary files a/SR/Engine/Utility/Bin/Utility.lib and b/SR/Engine/Utility/Bin/Utility.lib differ
+[1mdiff --git a/SR/Engine/Utility/Bin/Utility.pdb b/SR/Engine/Utility/Bin/Utility.pdb[m
+[1mindex 7fd3fb7..195415c 100644[m
+Binary files a/SR/Engine/Utility/Bin/Utility.pdb and b/SR/Engine/Utility/Bin/Utility.pdb differ
+[1mdiff --git a/SR/Reference/Library/System.lib b/SR/Reference/Library/System.lib[m
+[1mindex 47b1a7a..c5d33d7 100644[m
+Binary files a/SR/Reference/Library/System.lib and b/SR/Reference/Library/System.lib differ
+[1mdiff --git a/SR/Reference/Library/Utility.lib b/SR/Reference/Library/Utility.lib[m
+[1mindex 84fde62..3cb4aaa 100644[m
+Binary files a/SR/Reference/Library/Utility.lib and b/SR/Reference/Library/Utility.lib differ
