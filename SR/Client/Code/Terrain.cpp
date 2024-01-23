@@ -45,6 +45,8 @@ void CTerrain::LateUpdate_GameObject()
 
 void CTerrain::Render_GameObject()
 {
+	Get_Scene()->BeginOrtho();
+
 	m_pGraphicDev->SetRenderState(D3DRS_LIGHTING, TRUE);
 	m_pGraphicDev->SetTransform(D3DTS_WORLD, m_pTransformCom->Get_WorldMatrix());
 
@@ -53,6 +55,7 @@ void CTerrain::Render_GameObject()
 
 	m_pBufferCom->Render_Buffer();
 	m_pGraphicDev->SetRenderState(D3DRS_LIGHTING, FALSE);
+	Get_Scene()->EndOrtho();
 }
 
 HRESULT CTerrain::Add_Component()
