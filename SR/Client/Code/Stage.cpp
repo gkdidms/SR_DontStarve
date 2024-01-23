@@ -43,6 +43,7 @@ void CStage::LateUpdate_Scene()
 void CStage::Render_Scene()
 {
 	// DEBUG
+	//asd
 }
 
 HRESULT CStage::Ready_Layer_Environment(const _tchar * pLayerTag)
