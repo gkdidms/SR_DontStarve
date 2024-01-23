@@ -2,6 +2,7 @@
 
 #include "Component.h"
 #include "Base.h"
+#include "Transform.h"
 
 BEGIN(Engine)
 
@@ -15,7 +16,9 @@ protected:
 public:
 	_float			Get_ViewZ() { return m_fViewZ; }
 	CComponent*		Get_Component(COMPONENTID eID, const _tchar* pComponentTag);
+	CTransform*		Get_TransForm();
 	void			Compute_ViewZ(const _vec3* pPos);
+
 public:
 	virtual HRESULT		Ready_GameObject();
 	virtual _int		Update_GameObject(const _float& fTimeDelta);
