@@ -44,6 +44,7 @@ void CStage::Render_Scene()
 {
 	// DEBUG
 	//asd
+	//asf
 }
 
 HRESULT CStage::Ready_Layer_Environment(const _tchar * pLayerTag)
