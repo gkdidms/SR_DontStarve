@@ -2,7 +2,6 @@
 
 #include "Scene.h"
 
-
 class CStage : public Engine::CScene
 {
 private:

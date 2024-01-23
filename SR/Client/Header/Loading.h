@@ -36,7 +36,6 @@ private:
 	bool				m_bFinish;
 	_tchar				m_szLoading[128];
 
-
 public:
 	static CLoading*		Create(LPDIRECT3DDEVICE9 pGraphicDev, LOADINGID eID);
 

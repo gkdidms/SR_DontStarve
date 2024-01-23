@@ -1,15 +1,12 @@
 #include "..\..\Header\GameObject.h"
 
-#include "ProtoMgr.h"
-#include "Transform.h"
-
 CGameObject::CGameObject(LPDIRECT3DDEVICE9 pGraphicDev)
 	: m_pGraphicDev(pGraphicDev), m_fViewZ(0.f)
 {
 	m_pGraphicDev->AddRef();
 }
 
-CGameObject::CGameObject(const CGameObject& rhs)
+CGameObject::CGameObject(const CGameObject & rhs)
 	: m_pGraphicDev(rhs.m_pGraphicDev), m_fViewZ(rhs.m_fViewZ)
 {
 	m_pGraphicDev->AddRef();
@@ -25,7 +22,7 @@ HRESULT CGameObject::Ready_GameObject()
 	return S_OK;
 }
 
-_int CGameObject::Update_GameObject(const _float& fTimeDelta)
+_int CGameObject::Update_GameObject(const _float & fTimeDelta)
 {
 	for (auto& iter : m_mapComponent[ID_DYNAMIC])
 		iter.second->Update_Component(fTimeDelta);
@@ -53,27 +50,22 @@ void CGameObject::Free()
 	Safe_Release(m_pGraphicDev);
 }
 
-CComponent* CGameObject::Find_Component(COMPONENTID eID, const _tchar* pComponentTag)
+CComponent * CGameObject::Find_Component(COMPONENTID eID, const _tchar * pComponentTag)
 {
 	auto	iter = find_if(m_mapComponent[eID].begin(), m_mapComponent[eID].end(), CTag_Finder(pComponentTag));
 
 	if (iter == m_mapComponent[eID].end())
 		return nullptr;
-
+	
 	return iter->second;
 }
-CComponent* CGameObject::Get_Component(COMPONENTID eID, const _tchar* pComponentTag)
+CComponent * CGameObject::Get_Component(COMPONENTID eID, const _tchar * pComponentTag)
 {
-	CComponent* pComponent = Find_Component(eID, pComponentTag);
+	CComponent*		pComponent = Find_Component(eID, pComponentTag);
 
 	NULL_CHECK_RETURN(pComponent, nullptr);
-
+	
 	return pComponent;
-}
-
-CTransform* CGameObject::Get_TransForm()
-{
-	return dynamic_cast<CTransform*>(Get_Component(COMPONENTID::ID_DYNAMIC, L"Proto_Transform"));
 }
 
 void Engine::CGameObject::Compute_ViewZ(const _vec3* pPos)

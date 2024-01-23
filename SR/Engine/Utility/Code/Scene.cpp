@@ -1,6 +1,4 @@
 #include "..\..\Header\Scene.h"
-#include "Camera.h"
-
 
 CScene::CScene(LPDIRECT3DDEVICE9 pGraphicDev)
 	: m_pGraphicDev(pGraphicDev)
@@ -20,16 +18,6 @@ CComponent * CScene::Get_Component(COMPONENTID eID, const _tchar * pLayerTag, co
 		return nullptr;
 	
 	return iter->second->Get_Component(eID, pObjTag, pComponentTag);
-}
-
-void CScene::BeginOrtho()
-{
-	m_pCamera->BeginOrtho();
-}
-
-void CScene::EndOrtho()
-{
-	m_pCamera->EndOrtho();
 }
 
 HRESULT CScene::Ready_Scene()
