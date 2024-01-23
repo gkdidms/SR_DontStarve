@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "..\Include\stdafx.h"
 #include "..\Header\Logo.h"
 
 #include "Export_System.h"

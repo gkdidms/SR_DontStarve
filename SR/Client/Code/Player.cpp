@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "..\Include\stdafx.h"
 #include "..\Header\Player.h"
 
 #include "Export_System.h"

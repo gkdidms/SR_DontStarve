@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "..\Include\stdafx.h"
 #include "..\Header\MainApp.h"
 #include "Logo.h"
 #include "Stage.h"

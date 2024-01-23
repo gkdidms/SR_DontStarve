@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "..\Include\stdafx.h"
 #include "..\Header\Terrain.h"
 
 #include "Export_Utility.h"
