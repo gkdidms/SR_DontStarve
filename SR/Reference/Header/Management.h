@@ -15,10 +15,11 @@ private:
 	virtual ~CManagement();
 
 public:
-	CComponent*			Get_Component(COMPONENTID eID, const _tchar* pLayerTag, const _tchar* pObjTag, const _tchar* pComponentTag);
+	CComponent* Get_Component(COMPONENTID eID, const _tchar* pLayerTag, const _tchar* pObjTag, const _tchar* pComponentTag);
 
 public:
 	HRESULT			Set_Scene(CScene* pScene);
+	CScene*			Get_Scene() { return m_pScene; }
 
 	_int			Update_Scene(const _float& fTimeDelta);
 	void			LateUpdate_Scene();
@@ -26,7 +27,7 @@ public:
 
 
 private:
-	CScene*		m_pScene;
+	CScene* m_pScene;
 
 public:
 	virtual void Free();
