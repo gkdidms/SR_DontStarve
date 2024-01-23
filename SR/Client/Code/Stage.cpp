@@ -5,8 +5,6 @@
 #include "Export_Utility.h"
 
 #include "Player.h"
-#include "Monster.h"
-#include "BackGround.h"
 #include "Terrain.h"
 #include "DynamicCamera.h"
 #include "SkyBox.h"

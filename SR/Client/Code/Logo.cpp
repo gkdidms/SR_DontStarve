@@ -5,7 +5,6 @@
 #include "Export_Utility.h"
 
 
-#include "BackGround.h"
 #include "Stage.h"
 
 CLogo::CLogo(LPDIRECT3DDEVICE9 pGraphicDev)
@@ -76,9 +75,6 @@ HRESULT CLogo::Ready_Layer_Environment(const _tchar * pLayerTag)
 
 	Engine::CGameObject*		pGameObject = nullptr;
 
-	pGameObject = CBackGround::Create(m_pGraphicDev);
-	NULL_CHECK_RETURN(pGameObject, E_FAIL);
-	FAILED_CHECK_RETURN(pLayer->Add_GameObject(L"BackGround", pGameObject), E_FAIL);
 	
 	
 	m_mapLayer.insert({ pLayerTag, pLayer });
