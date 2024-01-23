@@ -13,6 +13,7 @@ CLoading::CLoading(LPDIRECT3DDEVICE9 pGraphicDev)
 
 CLoading::~CLoading()
 {
+	//commit Test
 }
 
 HRESULT CLoading::Ready_Loading(LOADINGID eID)
