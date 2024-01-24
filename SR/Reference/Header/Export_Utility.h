@@ -27,6 +27,8 @@ inline CComponent*		Get_Component(COMPONENTID eID, const _tchar* pLayerTag, cons
 inline HRESULT			Create_Management(LPDIRECT3DDEVICE9 pGraphicDev, CManagement** ppManagementInstance);
 
 inline HRESULT			Set_Scene(CScene* pScene);
+inline CScene*			Get_Scene();
+
 inline _int				Update_Scene(const _float& fTimeDelta);
 inline void				LateUpdate_Scene();
 inline void				Render_Scene(LPDIRECT3DDEVICE9 pGraphicDev);

@@ -30,6 +30,7 @@ HRESULT CManagement::Set_Scene(CScene * pScene)
 	return S_OK;
 }
 
+
 _int CManagement::Update_Scene(const _float & fTimeDelta)
 {
 	NULL_CHECK_RETURN(m_pScene, -1)
