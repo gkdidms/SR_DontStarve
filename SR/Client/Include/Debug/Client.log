@@ -1,0 +1,16 @@
+﻿  stdafx.cpp
+  DynamicCamera.cpp
+  Effect.cpp
+  Loading.cpp
+  Logo.cpp
+  MainApp.cpp
+C:\c++\sr\SR_DontStarve\SR\Client\Header\MainApp.h(1,1): warning C4828: 파일에 0x4ca 오프셋에서 시작하는 문자가 포함되어 있습니다. 이 문자는 현재 원본 문자 집합에서 잘못된 문자입니다(코드 페이지 949).
+  Player.cpp
+  SkyBox.cpp
+  Stage.cpp
+  Terrain.cpp
+  Client.cpp
+C:\c++\sr\SR_DontStarve\SR\Client\Header\MainApp.h(1,1): warning C4828: 파일에 0x4ca 오프셋에서 시작하는 문자가 포함되어 있습니다. 이 문자는 현재 원본 문자 집합에서 잘못된 문자입니다(코드 페이지 949).
+  코드를 생성하고 있습니다...
+     ../Bin\Client.lib 라이브러리 및 ../Bin\Client.exp 개체를 생성하고 있습니다.
+  Client.vcxproj -> C:\c++\sr\SR_DontStarve\SR\Client\Bin\Client.exe
